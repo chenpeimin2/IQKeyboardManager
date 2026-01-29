@@ -635,7 +635,7 @@
 				C0ACB0F119CF104B0057B571 /* Sources */,
 				C0ACB0F219CF104B0057B571 /* Frameworks */,
 				C0ACB0F319CF104B0057B571 /* Resources */,
-				17B2CF02857B50C3053DFA79 /* [CP] Embed Pods Frameworks */,
+				B44103E5B685708B3AC983A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -654,7 +654,7 @@
 				C0B63B971781FAB1008D3B64 /* Sources */,
 				C0B63B981781FAB1008D3B64 /* Frameworks */,
 				C0B63B991781FAB1008D3B64 /* Resources */,
-				44A8E642B5165FD9391AE82F /* [CP] Embed Pods Frameworks */,
+				BC0FEBD01B9444A241D19851 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -682,11 +682,11 @@
 					};
 					C0ACB0F419CF104B0057B571 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = 7UUTF6T5P9;
+						DevelopmentTeam = WU5DLDVJ7C;
 						LastSwiftMigration = 1020;
 					};
 					C0B63B9A1781FAB1008D3B64 = {
-						DevelopmentTeam = 7UUTF6T5P9;
+						DevelopmentTeam = WU5DLDVJ7C;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -760,7 +760,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		17B2CF02857B50C3053DFA79 /* [CP] Embed Pods Frameworks */ = {
+		4869E4C3A62A52BE8C3461F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoObjC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B44103E5B685708B3AC983A2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -769,18 +787,20 @@
 				"${PODS_ROOT}/Target Support Files/Pods-DemoSwift/Pods-DemoSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IQDropDownTextField/IQDropDownTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/LookinServer/LookinServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQDropDownTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LookinServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoSwift/Pods-DemoSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		44A8E642B5165FD9391AE82F /* [CP] Embed Pods Frameworks */ = {
+		BC0FEBD01B9444A241D19851 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -798,24 +818,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoObjC/Pods-DemoObjC-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4869E4C3A62A52BE8C3461F8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DemoObjC-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D85D78F460B5CF0FF9536757 /* [CP] Check Pods Manifest.lock */ = {
@@ -1121,17 +1123,18 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 6.5.6;
+				DEVELOPMENT_TEAM = WU5DLDVJ7C;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Demo/Swift_Demo/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 6.5;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iftekhar.IQKeyboardManagerSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cpm.IQKeyboardManagerSwift;
 				PRODUCT_NAME = DemoSwift;
 				SWIFT_OBJC_BRIDGING_HEADER = "Demo/Swift_Demo/Resources/IQKeyboardManger-Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1158,17 +1161,18 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 6.5.6;
+				DEVELOPMENT_TEAM = WU5DLDVJ7C;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Demo/Swift_Demo/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 6.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iftekhar.IQKeyboardManagerSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cpm.IQKeyboardManagerSwift;
 				PRODUCT_NAME = DemoSwift;
 				SWIFT_OBJC_BRIDGING_HEADER = "Demo/Swift_Demo/Resources/IQKeyboardManger-Swift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1329,7 +1333,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Iftekhar Qurashi (RFN29V7Q6Y)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 6.5.6;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WU5DLDVJ7C;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
@@ -1342,7 +1346,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 6.5;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iftekhar.IQKeyboardManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cpm.IQKeyboardManager;
 				PRODUCT_NAME = IQKeyboardManagerDemo;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1366,7 +1370,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Iftekhar Qurashi (RFN29V7Q6Y)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 6.5.6;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WU5DLDVJ7C;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
@@ -1379,7 +1383,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 6.5;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iftekhar.IQKeyboardManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cpm.IQKeyboardManager;
 				PRODUCT_NAME = IQKeyboardManagerDemo;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

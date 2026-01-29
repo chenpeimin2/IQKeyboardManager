@@ -1,16 +1,21 @@
 PODS:
-  - IQDropDownTextField (1.1.1)
-  - IQKeyboardManager (6.5.6)
-  - IQKeyboardManagerSwift (6.5.6.2)
+  - IQDropDownTextField (3.0.2)
+  - IQKeyboardManager (6.5.6.3)
+  - IQKeyboardManagerSwift (6.5.6.4)
+  - LookinServer/Core (1.2.8)
+  - LookinServer/Swift (1.2.8):
+    - LookinServer/Core
 
 DEPENDENCIES:
   - IQDropDownTextField
   - IQKeyboardManager (from `.`)
   - IQKeyboardManagerSwift (from `.`)
+  - LookinServer/Swift
 
 SPEC REPOS:
   trunk:
     - IQDropDownTextField
+    - LookinServer
 
 EXTERNAL SOURCES:
   IQKeyboardManager:
@@ -19,10 +24,11 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  IQDropDownTextField: 3d2e5728a2b83ff5dbb14cb9b497a80005124cbe
-  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
-  IQKeyboardManagerSwift: e6d6ae2737bfa048322da557a7ff7e9115a60c20
+  IQDropDownTextField: 6894c0f8b3acddd1e1bdf167ee23df7a3c30c705
+  IQKeyboardManager: a2ffdb09a2937d9967ba4e1defb6f3b335055aad
+  IQKeyboardManagerSwift: 563fa185ec750fe0c3725296ac45c6bcfc3ca1b3
+  LookinServer: 1b2b61c6402ae29fa22182d48f5cd067b4e99e80
 
-PODFILE CHECKSUM: 8213d203d0ee1c26652ada8ddf82a497746d9712
+PODFILE CHECKSUM: d86b244992ce021098b7180fb8e30baf74ca4411
 
 COCOAPODS: 1.16.2
