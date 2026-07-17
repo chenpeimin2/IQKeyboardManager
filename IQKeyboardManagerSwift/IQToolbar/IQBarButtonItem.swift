@@ -32,7 +32,7 @@ open class IQBarButtonItem: UIBarButtonItem {
         _ = IQBarButtonItem._classInitialize
         super.init()
 #if compiler(>=6.2)
-        if #available(iOS 19.0, *) {
+        if #available(iOS 26.0, *) {
             hidesSharedBackground = true
         }
 #endif
@@ -42,7 +42,7 @@ open class IQBarButtonItem: UIBarButtonItem {
         _ = IQBarButtonItem._classInitialize
         super.init(coder: aDecoder)
 #if compiler(>=6.2)
-        if #available(iOS 19.0, *) {
+        if #available(iOS 26.0, *) {
             hidesSharedBackground = true
         }
 #endif

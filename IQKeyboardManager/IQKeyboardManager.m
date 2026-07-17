@@ -1536,7 +1536,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     _startingScrollIndicatorInsets = UIEdgeInsetsZero;
     _startingContentOffset = CGPointZero;
     
-    if (@available(iOS 19.0, *)) {
+    if (@available(iOS 26.0, *)) {
         if (_textFieldView) {
             // 检查文本框是否仍然是第一响应者
             if ([_textFieldView isFirstResponder]) {

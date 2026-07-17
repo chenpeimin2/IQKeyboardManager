@@ -177,7 +177,7 @@ open class IQToolbar: UIToolbar, UIInputViewAudioFeedback {
     
     // 添加更新背景色的私有方法
     private func updateBackgroundColor() {
-        if #available(iOS 19.0, *) {
+        if #available(iOS 26.0, *) {
             if let customColor = customBackgroundColor {
                 self.backgroundColor = customColor
             } else {

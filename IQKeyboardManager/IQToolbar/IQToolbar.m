@@ -64,7 +64,7 @@
 // 更新现有的updateBackgroundColor方法
 - (void)updateBackgroundColor
 {
-    if (@available(iOS 19.0, *)) {
+    if (@available(iOS 26.0, *)) {
         if (self.customBackgroundColor) {
             self.backgroundColor = self.customBackgroundColor;
         } else {

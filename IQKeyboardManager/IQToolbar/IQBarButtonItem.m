@@ -66,7 +66,7 @@
 {
     self = [super init];
     if (self) {
-        if (@available(iOS 19.0, *)) {
+        if (@available(iOS 26.0, *)) {
             self.hidesSharedBackground = YES;
         }
     }
@@ -77,7 +77,7 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
-        if (@available(iOS 19.0, *)) {
+        if (@available(iOS 26.0, *)) {
             self.hidesSharedBackground = YES;
         }
     }
@@ -91,7 +91,7 @@
     if (self)
     {
         _isSystemItem = YES;
-        if (@available(iOS 19.0, *)) {
+        if (@available(iOS 26.0, *)) {
             self.hidesSharedBackground = YES;
         }
     }
